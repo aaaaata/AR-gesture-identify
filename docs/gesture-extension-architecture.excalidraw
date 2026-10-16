@@ -1,0 +1,422 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "title", "x": 60, "y": 35, "width": 1100, "height": 45,
+      "text": "Android XR 手势扩展：Demo 到真实设备的架构映射", "originalText": "Android XR 手势扩展：Demo 到真实设备的架构映射",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100001,
+      "version": 1, "versionNonce": 100002, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "subtitle", "x": 62, "y": 90, "width": 1340, "height": 30,
+      "text": "核心结论：扩展能力运行在系统 Runtime 之上；通过公开数据 API 接入，不与保密 Runtime 合并", "originalText": "核心结论：扩展能力运行在系统 Runtime 之上；通过公开数据 API 接入，不与保密 Runtime 合并",
+      "fontSize": 20, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100003,
+      "version": 1, "versionNonce": 100004, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "title_divider", "x": 60, "y": 135, "width": 1680, "height": 0,
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100005,
+      "version": 1, "versionNonce": 100006, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [1680, 0]]
+    },
+    {
+      "type": "text", "id": "demo_section", "x": 60, "y": 165, "width": 600, "height": 35,
+      "text": "1. 当前 Demo：已经跑通的应用内能力链路", "originalText": "1. 当前 Demo：已经跑通的应用内能力链路",
+      "fontSize": 24, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100007,
+      "version": 1, "versionNonce": 100008, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "photo_input", "x": 70, "y": 245, "width": 160, "height": 80,
+      "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100009,
+      "version": 1, "versionNonce": 100010, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false
+    },
+    {
+      "type": "text", "id": "photo_input_text", "x": 91, "y": 265, "width": 118, "height": 40,
+      "text": "系统图片选择器\nUri", "originalText": "系统图片选择器\nUri", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100,
+      "angle": 0, "seed": 100011, "version": 1, "versionNonce": 100012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "app_box", "x": 290, "y": 225, "width": 220, "height": 120,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100013,
+      "version": 1, "versionNonce": 100014, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "app_text", "x": 310, "y": 248, "width": 180, "height": 70,
+      "text": "app\nMainActivity + Compose\n选择 / 展示 / 状态管理", "originalText": "app\nMainActivity + Compose\n选择 / 展示 / 状态管理",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 100015, "version": 1, "versionNonce": 100016,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "sdk_box", "x": 590, "y": 210, "width": 270, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#60a5fa", "fillStyle": "solid", "strokeWidth": 3,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100017,
+      "version": 1, "versionNonce": 100018, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "sdk_text", "x": 615, "y": 235, "width": 220, "height": 100,
+      "text": "gesture-sdk\nGestureClient.recognize(Uri)\nGestureResult\n稳定的应用层 API", "originalText": "gesture-sdk\nGestureClient.recognize(Uri)\nGestureResult\n稳定的应用层 API",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 100019, "version": 1, "versionNonce": 100020,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "ipc_box", "x": 940, "y": 225, "width": 235, "height": 120,
+      "strokeColor": "#b45309", "backgroundColor": "#fef3c7", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100021,
+      "version": 1, "versionNonce": 100022, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "ipc_text", "x": 960, "y": 247, "width": 195, "height": 76,
+      "text": "进程边界\nBinder / Messenger\nParcelFileDescriptor", "originalText": "进程边界\nBinder / Messenger\nParcelFileDescriptor",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 100023, "version": 1, "versionNonce": 100024,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "service_box", "x": 1250, "y": 205, "width": 300, "height": 160,
+      "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid", "strokeWidth": 3,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100025,
+      "version": 1, "versionNonce": 100026, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "service_text", "x": 1272, "y": 229, "width": 256, "height": 112,
+      "text": "gesture-service\n:gesture_runtime 进程\nGestureRecognitionService\n图片解码 + Demo 轮廓算法", "originalText": "gesture-service\n:gesture_runtime 进程\nGestureRecognitionService\n图片解码 + Demo 轮廓算法",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 100027, "version": 1, "versionNonce": 100028,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "result_output", "x": 1595, "y": 245, "width": 165, "height": 80,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100029,
+      "version": 1, "versionNonce": 100030, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false
+    },
+    {
+      "type": "text", "id": "result_output_text", "x": 1607, "y": 265, "width": 141, "height": 40,
+      "text": "GestureResult\n返回 UI", "originalText": "GestureResult\n返回 UI", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100,
+      "angle": 0, "seed": 100031, "version": 1, "versionNonce": 100032, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "arrow_photo_app", "x": 232, "y": 285, "width": 56, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100033,
+      "version": 1, "versionNonce": 100034, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [56, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_app_sdk", "x": 512, "y": 285, "width": 76, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100035,
+      "version": 1, "versionNonce": 100036, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [76, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_sdk_ipc", "x": 862, "y": 285, "width": 76, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100037,
+      "version": 1, "versionNonce": 100038, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [76, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_ipc_service", "x": 1177, "y": 285, "width": 71, "height": 0,
+      "strokeColor": "#b45309", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100039,
+      "version": 1, "versionNonce": 100040, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [71, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_service_result", "x": 1552, "y": 285, "width": 41, "height": 0,
+      "strokeColor": "#6d28d9", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 100041,
+      "version": 1, "versionNonce": 100042, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [41, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "line", "id": "demo_divider", "x": 60, "y": 405, "width": 1680, "height": 0,
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200001,
+      "version": 1, "versionNonce": 200002, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [1680, 0]]
+    },
+    {
+      "type": "text", "id": "device_section", "x": 60, "y": 435, "width": 760, "height": 35,
+      "text": "2. 真实眼镜：保留上层链路，只替换输入源与识别后端", "originalText": "2. 真实眼镜：保留上层链路，只替换输入源与识别后端",
+      "fontSize": 24, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200003,
+      "version": 1, "versionNonce": 200004, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "real_app", "x": 80, "y": 535, "width": 230, "height": 100,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200005,
+      "version": 1, "versionNonce": 200006, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "real_app_text", "x": 104, "y": 560, "width": 182, "height": 50,
+      "text": "XR 应用\n业务只依赖 Gesture SDK", "originalText": "XR 应用\n业务只依赖 Gesture SDK",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200007, "version": 1, "versionNonce": 200008,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "real_sdk", "x": 390, "y": 515, "width": 270, "height": 140,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#60a5fa", "fillStyle": "solid", "strokeWidth": 3,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200009,
+      "version": 1, "versionNonce": 200010, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "real_sdk_text", "x": 416, "y": 540, "width": 218, "height": 90,
+      "text": "Gesture SDK\n稳定 DTO / 错误码 / 版本\n静态图：recognize(Uri)\n实时流：Flow<GestureEvent>", "originalText": "Gesture SDK\n稳定 DTO / 错误码 / 版本\n静态图：recognize(Uri)\n实时流：Flow<GestureEvent>",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200011, "version": 1, "versionNonce": 200012,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "extension_engine", "x": 750, "y": 500, "width": 330, "height": 170,
+      "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid", "strokeWidth": 3,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200013,
+      "version": 1, "versionNonce": 200014, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "extension_engine_text", "x": 777, "y": 525, "width": 276, "height": 120,
+      "text": "扩展手势服务 / Engine\n输入适配器\n预处理 + ML 模型\n时序状态机\n生命周期与资源治理", "originalText": "扩展手势服务 / Engine\n输入适配器\n预处理 + ML 模型\n时序状态机\n生命周期与资源治理",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200015, "version": 1, "versionNonce": 200016,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "input_title", "x": 1190, "y": 490, "width": 450, "height": 30,
+      "text": "可选硬件数据接口（至少开放一种）", "originalText": "可选硬件数据接口（至少开放一种）",
+      "fontSize": 20, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top", "strokeColor": "#3b82f6",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200017, "version": 1, "versionNonce": 200018,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "vendor_api", "x": 1190, "y": 540, "width": 390, "height": 90,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200019,
+      "version": 1, "versionNonce": 200020, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "vendor_api_text", "x": 1216, "y": 559, "width": 338, "height": 52,
+      "text": "厂商公开 SDK\n相机帧 / 手部关键点 / 姿态事件", "originalText": "厂商公开 SDK\n相机帧 / 手部关键点 / 姿态事件",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200021, "version": 1, "versionNonce": 200022,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "jetpack_api", "x": 1190, "y": 665, "width": 390, "height": 90,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200023,
+      "version": 1, "versionNonce": 200024, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "jetpack_api_text", "x": 1214, "y": 683, "width": 342, "height": 54,
+      "text": "Jetpack XR / ARCore for Jetpack XR\n设备支持时读取 hand tracking / joint pose", "originalText": "Jetpack XR / ARCore for Jetpack XR\n设备支持时读取 hand tracking / joint pose",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200025, "version": 1, "versionNonce": 200026,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "openxr_api", "x": 1190, "y": 790, "width": 390, "height": 90,
+      "strokeColor": "#1e40af", "backgroundColor": "#dbeafe", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200027,
+      "version": 1, "versionNonce": 200028, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "openxr_api_text", "x": 1215, "y": 808, "width": 340, "height": 54,
+      "text": "OpenXR Native（设备暴露时）\n例如手部追踪扩展；不是修改 Runtime", "originalText": "OpenXR Native（设备暴露时）\n例如手部追踪扩展；不是修改 Runtime",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#374151",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 200029, "version": 1, "versionNonce": 200030,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "arrow_real_app_sdk", "x": 312, "y": 585, "width": 76, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200031,
+      "version": 1, "versionNonce": 200032, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [76, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_real_sdk_engine", "x": 662, "y": 585, "width": 86, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200033,
+      "version": 1, "versionNonce": 200034, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [86, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_vendor_engine", "x": 1188, "y": 585, "width": 106, "height": 0,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200035,
+      "version": 1, "versionNonce": 200036, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [-106, 0]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_jetpack_engine", "x": 1188, "y": 710, "width": 150, "height": 90,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200037,
+      "version": 1, "versionNonce": 200038, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [-55, 0], [-55, -90], [-150, -90]],
+      "startBinding": null, "endBinding": null, "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_openxr_engine", "x": 1188, "y": 835, "width": 195, "height": 180,
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0, "seed": 200039,
+      "version": 1, "versionNonce": 200040, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [-85, 0], [-85, -180], [-195, -180]],
+      "startBinding": null, "endBinding": null, "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle", "id": "wire_evidence", "x": 80, "y": 710, "width": 590, "height": 175,
+      "strokeColor": "#1e293b", "backgroundColor": "#1e293b", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300001,
+      "version": 1, "versionNonce": 300002, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "wire_evidence_text", "x": 106, "y": 731, "width": 538, "height": 132,
+      "text": "当前 IPC 证据\nrequest: MSG_RECOGNIZE + image_descriptor\nreply:   MSG_RESULT | MSG_ERROR\nresult:  label, confidence, inferenceTimeMs, engine,\n         inputFingerprint\nprocess: com.example.xrgesturedemo:gesture_runtime", "originalText": "当前 IPC 证据\nrequest: MSG_RECOGNIZE + image_descriptor\nreply:   MSG_RESULT | MSG_ERROR\nresult:  label, confidence, inferenceTimeMs, engine,\n         inputFingerprint\nprocess: com.example.xrgesturedemo:gesture_runtime",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top", "strokeColor": "#22c55e",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 300003, "version": 1, "versionNonce": 300004,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "system_runtime", "x": 230, "y": 990, "width": 1320, "height": 155,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid", "strokeWidth": 3,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300005,
+      "version": 1, "versionNonce": 300006, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "system_runtime_text", "x": 295, "y": 1018, "width": 1190, "height": 96,
+      "text": "厂商保密 Runtime + Android XR 系统层（不修改、不合并）\n设备驱动 · 相机/IMU · 头手追踪 · 坐标系 · 权限 · 生命周期 · 合成显示 · 系统输入\n上层只能使用它公开的厂商 SDK、Jetpack XR 或 OpenXR 能力", "originalText": "厂商保密 Runtime + Android XR 系统层（不修改、不合并）\n设备驱动 · 相机/IMU · 头手追踪 · 坐标系 · 权限 · 生命周期 · 合成显示 · 系统输入\n上层只能使用它公开的厂商 SDK、Jetpack XR 或 OpenXR 能力",
+      "fontSize": 20, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#ffffff",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 300007, "version": 1, "versionNonce": 300008,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "arrow_runtime_vendor", "x": 1120, "y": 988, "width": 68, "height": 403,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300009,
+      "version": 1, "versionNonce": 300010, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [0, -403], [68, -403]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_runtime_jetpack", "x": 1150, "y": 988, "width": 38, "height": 278,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300011,
+      "version": 1, "versionNonce": 300012, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [0, -278], [38, -278]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "arrow_runtime_openxr", "x": 1515, "y": 988, "width": 0, "height": 106,
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300013,
+      "version": 1, "versionNonce": 300014, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "points": [[0, 0], [0, -106]], "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle", "id": "warning_box", "x": 1620, "y": 540, "width": 145, "height": 340,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid", "strokeWidth": 2,
+      "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0, "seed": 300015,
+      "version": 1, "versionNonce": 300016, "isDeleted": false, "groupIds": [], "boundElements": null,
+      "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "warning_text", "x": 1638, "y": 572, "width": 109, "height": 276,
+      "text": "边界\n\n不能绕过\n硬件权限\n\n不能补出\n未开放数据\n\n不能直接成为\n系统级手势输入\n\n不能与保密\nRuntime 二进制合并", "originalText": "边界\n\n不能绕过\n硬件权限\n\n不能补出\n未开放数据\n\n不能直接成为\n系统级手势输入\n\n不能与保密\nRuntime 二进制合并",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle", "strokeColor": "#b91c1c",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 300017, "version": 1, "versionNonce": 300018,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "demo_claim", "x": 245, "y": 1175, "width": 1280, "height": 60,
+      "text": "Demo 已证明：App → SDK → IPC → Engine → Result 可替换、可跨进程。尚未证明：真实硬件数据可得、实时性能、坐标同步、系统级输入权限。", "originalText": "Demo 已证明：App → SDK → IPC → Engine → Result 可替换、可跨进程。尚未证明：真实硬件数据可得、实时性能、坐标同步、系统级输入权限。",
+      "fontSize": 19, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top", "strokeColor": "#1e40af",
+      "backgroundColor": "transparent", "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
+      "roughness": 0, "opacity": 100, "angle": 0, "seed": 300019, "version": 1, "versionNonce": 300020,
+      "isDeleted": false, "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}

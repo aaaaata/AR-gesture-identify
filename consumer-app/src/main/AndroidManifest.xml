@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission
+        android:name="com.example.gesturehost.permission.BIND_GESTURE_SERVICE" />
+
+    <uses-feature
+        android:name="android.software.xr.api.spatial"
+        android:required="false" />
+
+    <queries>
+        <package android:name="com.example.xrgesturedemo" />
+        <package android:name="com.example.gesturehost" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="手势服务客户端 B"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GestureConsumer">
+        <meta-data
+            android:name="com.rayneo.mercury.app"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <property
+                android:name="android.window.PROPERTY_XR_ACTIVITY_START_MODE"
+                android:value="XR_ACTIVITY_START_MODE_HOME_SPACE" />
+        </activity>
+    </application>
+</manifest>
